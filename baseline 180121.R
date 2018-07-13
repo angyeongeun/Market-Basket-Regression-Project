@@ -126,21 +126,10 @@ matching_n = as.data.frame.integer(FactoredVariable)
 
 
 
-matching = as.integer(1:721946)
-matching_n = cbind(matching,matching_n)
 
 write.csv(train_set,"train.set.csv")
 write.csv(matching_n,"matching_n.csv")
 rm(list=ls())          
-matching_n=read.csv("matching_n.csv")
-class(matching_n)
-matching_n= as.matrix(matching_n[,-1])
-zero = matrix(0,721946,1000)
-zero[matching_n] = 1
-write.csv(zero,"zero.csv")
-zero[2,]
-
-
 
 
 
