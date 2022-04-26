@@ -1,3 +1,3 @@
 # market basket regression in R
-DATA: instacart user data in Kaggle competition
+DATA: instacart user data in Kaggle 
 
